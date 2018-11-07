@@ -1,0 +1,7 @@
+inst/doc
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+convert_to_ascii_news.sh
+Thumbs.db

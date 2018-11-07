@@ -1,0 +1,32 @@
+Package: leaflet.opacity
+Type: Package
+Title: Opacity Controls for Leaflet Maps
+Version: 0.1.0
+Date: 2018-11-07
+Authors@R: c(
+    person("Marc", "Becker", ,"marc.becker@uni-jena.de", role = c("aut", "cre"),
+      comment = "R interface"),
+    person(family = "LizardTech", role = c("aut", "cph"), 
+      comment = "Leaflet.OpacityControls JavaScript library")
+    )
+Description: 
+    Extends the leaflet R package with the Leaflet.OpacityControls Javascript 
+    plugin. Adds controls to the leaflet map for adjusting the 
+    opacity of a layer.
+BugReports: https://github.com/be-marc/leaflet.opacity
+License: GPL-3
+Imports: 
+    htmltools,
+    htmlwidgets
+Suggests:
+    leaflet,
+    raster,
+    rgdal,
+    magrittr,
+    testthat,
+    knitr,
+    rmarkdown
+Encoding: UTF-8
+LazyData: true
+VignetteBuilder: knitr
+RoxygenNote: 6.1.1

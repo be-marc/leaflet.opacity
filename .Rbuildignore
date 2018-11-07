@@ -1,0 +1,4 @@
+^cran-comments\.md$
+^.*\.Rproj$
+^\.Rproj\.user$
+convert_to_ascii_news.sh
