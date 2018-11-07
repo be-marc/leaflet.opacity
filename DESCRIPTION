@@ -10,7 +10,7 @@ Authors@R: c(
       comment = "Leaflet.OpacityControls JavaScript library")
     )
 Description: 
-    Extends the leaflet R package with the Leaflet.OpacityControls Javascript 
+    Extends the leaflet R package with the Leaflet.OpacityControls JavaScript 
     plugin. Adds controls to the leaflet map for adjusting the 
     opacity of a layer.
 BugReports: https://github.com/be-marc/leaflet.opacity
