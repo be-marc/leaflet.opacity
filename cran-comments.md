@@ -8,3 +8,7 @@
 0 errors | 0 warnings | 0 note
 
 * This is a new release.
+
+## Resubmission
+
+* Add single quotes to software package names in DESCRIPTION
