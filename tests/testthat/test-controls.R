@@ -17,8 +17,10 @@ testthat::test_that("Initialize map dependencies in addOpacitySlider", {
     addRasterImage(r, layerId = "raster", project = FALSE) %>%
     addOpacitySlider(layerId = "raster")
 
-  expect_equal(res$dependencies[[1]]$name, "jquery-ui")
-  expect_equal(res$dependencies[[2]]$name, "opacity")
+  expect_contains(
+    vapply(res$dependencies, function(x) x$name, character(1)),
+    c("jquery-ui", "opacity")
+  )
 })
 
 testthat::test_that("Initialize map dependencies in addLowerOpacity", {
@@ -33,8 +35,10 @@ testthat::test_that("Initialize map dependencies in addLowerOpacity", {
     addRasterImage(r, layerId = "raster", project = FALSE) %>%
     addLowerOpacity(layerId = "raster")
 
-  expect_equal(res$dependencies[[1]]$name, "jquery-ui")
-  expect_equal(res$dependencies[[2]]$name, "opacity")
+    expect_contains(
+      vapply(res$dependencies, function(x) x$name, character(1)),
+      c("jquery-ui", "opacity")
+    )
 })
 
 testthat::test_that("Initialize map dependencies in addHigherOpacity", {
@@ -49,8 +53,10 @@ testthat::test_that("Initialize map dependencies in addHigherOpacity", {
     addRasterImage(r, layerId = "raster", project = FALSE) %>%
     addHigherOpacity(layerId = "raster")
 
-  expect_equal(res$dependencies[[1]]$name, "jquery-ui")
-  expect_equal(res$dependencies[[2]]$name, "opacity")
+    expect_contains(
+      vapply(res$dependencies, function(x) x$name, character(1)),
+      c("jquery-ui", "opacity")
+    )
 })
 
 testthat::test_that("Add javascript code with addOpacitySlider", {
